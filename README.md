@@ -6,6 +6,8 @@ This fork also includes r/w access to / (aka disk0s1s1), on top of the previousl
 
 Fat creds to stek on the r/w stuff, and originally xerub too. 
 
+ETA SON: AMFI PATCH
+
 ### Offsets
 
 The offsets used are for iPhone 7 on iOS 10.3.1 and must be changed if that's not what you're using.
