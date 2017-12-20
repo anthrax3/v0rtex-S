@@ -6,7 +6,10 @@ This fork also includes r/w access to / (aka disk0s1s1), on top of the previousl
 
 Fat creds to stek on the r/w stuff, and originally xerub too. 
 
-ETA SON: AMFI PATCH
+Added amfi patch. Thanks to: xerub && theninjaprawn. To see how to trust binaries see the comments in amfi.m. Doesn't support binaries located in /var or stashed binaries because sandbox isn't patched. \
+
+Coming soon: loading tweaks via cycript & running SSH and Cydia if I have time. Will release a demo before that on my Twitter: @Jakeashacks
+If you can't wait make a bootstrap.tar containing cycript & MobileSubstrate (cycript needs some binaries from the framework to work, also we need substrate to load all tweaks at the same time. Substrate iself does **NOT** work. See the code in amfi.m to get an idea how it works)
 
 ### Offsets
 
