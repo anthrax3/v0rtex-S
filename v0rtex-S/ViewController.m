@@ -12,6 +12,7 @@
 #include "kernel.h"
 #include "symbols.h"
 #include "root-rw.h"
+#include "the_super_fun_part/amfi.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *outputView;
@@ -84,7 +85,7 @@
     LOG("remount: %d", remountOutput);
     if (remountOutput != 0) {
         [self writeText:@"ERROR: failed to remount '/' as r/w"];
-        return;
+      //  return;
     }
     
     [self writeText:@"remounted '/' as r/w"];
@@ -98,11 +99,14 @@
     LOG("root file: %p", rootF);
     if (rootF == 0) {
         [self writeText:@"ERROR: failed to write root test file"];
-        return;
+       // return;
     }
     
     [self writeText:@"wrote test root file!"];
     [self writeText:[NSString stringWithFormat:@"/test.txt (%p)", rootF]];
+    
+    int amfi = patch_amfi(tfp0, kslide);
+    [self writeText:[NSString stringWithFormat:@"amfi: %d", amfi]];
     
     
     // Done.
