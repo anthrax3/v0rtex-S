@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820EF0671FEAB0B2006104ED /* libjb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 820EF0661FEAB0B2006104ED /* libjb.a */; };
+		820EF06A1FEAB30D006104ED /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = 820EF0681FEAB30D006104ED /* patchfinder64.c */; };
+		82178E0A1FEAFAF3002975CE /* amfi.m in Sources */ = {isa = PBXBuildFile; fileRef = 82178E091FEAFAF3002975CE /* amfi.m */; };
 		B58B32401FE4EBA300EB7B47 /* kernel.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B323D1FE4EBA300EB7B47 /* kernel.m */; };
 		B58B32441FE4ED3B00EB7B47 /* ls in Resources */ = {isa = PBXBuildFile; fileRef = B58B32431FE4ED3B00EB7B47 /* ls */; };
 		B58B32461FE4ED6300EB7B47 /* symbols.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B32451FE4ED6300EB7B47 /* symbols.m */; };
@@ -23,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		820EF0661FEAB0B2006104ED /* libjb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjb.a; path = "v0rtex-S/the_super_fun_part/libjb.a"; sourceTree = "<group>"; };
+		820EF0681FEAB30D006104ED /* patchfinder64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = patchfinder64.c; path = "v0rtex-S/the_super_fun_part/patchfinder64.c"; sourceTree = "<group>"; };
+		82178E091FEAFAF3002975CE /* amfi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = amfi.m; path = "v0rtex-S/the_super_fun_part/amfi.m"; sourceTree = "<group>"; };
+		8299A1741FEAB03D00BA3AB4 /* the_super_fun_part */ = {isa = PBXFileReference; lastKnownFileType = folder; path = the_super_fun_part; sourceTree = "<group>"; };
+		8299A1751FEAB04600BA3AB4 /* the_super_fun_part */ = {isa = PBXFileReference; lastKnownFileType = folder; path = the_super_fun_part; sourceTree = "<group>"; };
 		B58B323D1FE4EBA300EB7B47 /* kernel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kernel.m; sourceTree = "<group>"; };
 		B58B323F1FE4EBA300EB7B47 /* kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel.h; sourceTree = "<group>"; };
 		B58B32431FE4ED3B00EB7B47 /* ls */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ls; sourceTree = "<group>"; };
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820EF0671FEAB0B2006104ED /* libjb.a in Frameworks */,
 				EE665E261FDC013D00FF457E /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +71,8 @@
 		EE5252A01FDA4F2F00993801 = {
 			isa = PBXGroup;
 			children = (
+				82178E091FEAFAF3002975CE /* amfi.m */,
+				820EF0681FEAB30D006104ED /* patchfinder64.c */,
 				B5BB8F781FE4D97800B60FDC /* README.md */,
 				EE5252AB1FDA4F2F00993801 /* v0rtex-S */,
 				EE5252AA1FDA4F2F00993801 /* Products */,
@@ -82,6 +93,7 @@
 			children = (
 				EEAC27D31FDDB0A3003C1801 /* Supporting Files */,
 				B58B32431FE4ED3B00EB7B47 /* ls */,
+				8299A1751FEAB04600BA3AB4 /* the_super_fun_part */,
 				EE5252BB1FDA4F2F00993801 /* main.m */,
 				EE5252AC1FDA4F2F00993801 /* AppDelegate.h */,
 				EE5252AD1FDA4F2F00993801 /* AppDelegate.m */,
@@ -103,6 +115,7 @@
 		EE665E201FDBFDB600FF457E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				820EF0661FEAB0B2006104ED /* libjb.a */,
 				EE665E251FDC013D00FF457E /* IOKit.framework */,
 			);
 			name = Frameworks;
@@ -111,6 +124,7 @@
 		EEAC27D31FDDB0A3003C1801 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8299A1741FEAB03D00BA3AB4 /* the_super_fun_part */,
 				EE5252BA1FDA4F2F00993801 /* Info.plist */,
 				EE5252B51FDA4F2F00993801 /* Assets.xcassets */,
 				EE5252B71FDA4F2F00993801 /* LaunchScreen.storyboard */,
@@ -198,6 +212,8 @@
 				EE5252B11FDA4F2F00993801 /* ViewController.m in Sources */,
 				EE5252BC1FDA4F2F00993801 /* main.m in Sources */,
 				EE5252AE1FDA4F2F00993801 /* AppDelegate.m in Sources */,
+				82178E0A1FEAFAF3002975CE /* amfi.m in Sources */,
+				820EF06A1FEAB30D006104ED /* patchfinder64.c in Sources */,
 				EE5169281FDC2A7000805460 /* v0rtex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,10 +352,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6EKJWC698P;
+				DEVELOPMENT_TEAM = 22G2QV87A2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/v0rtex-S/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sticktron.v0rtex;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/v0rtex-S/the_super_fun_part",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sticktron.v0rtexroot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -352,10 +373,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6EKJWC698P;
+				DEVELOPMENT_TEAM = 22G2QV87A2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/v0rtex-S/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sticktron.v0rtex;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/v0rtex-S/the_super_fun_part",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sticktron.v0rtexroot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
